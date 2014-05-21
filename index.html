@@ -1,9 +1,22 @@
-# Christian H. Mosveen
+---
+layout: default
+---
 
-{{ site.time | date_to_string }}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <div>
+      Christian H. Mosveen, {{ site.time | date_to_string }}
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+      {% highlight ruby %}
+      def foo
+        puts 'foo'
+      end
+      {% endhighlight %}
+    </div>
+  </body>
+</html>
